@@ -1,4 +1,4 @@
-const sampleUser = {
+const profilePatchPayload = {
   type: "profile",
   id: "01HH0YT3XQ8T22HQESD3CYM85B",
   attributes: {
@@ -30,4 +30,4 @@ const sampleUser = {
   },
 };
 
-module.exports = { sampleUser };
+module.exports = { profilePatchPayload };

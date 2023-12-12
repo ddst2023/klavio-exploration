@@ -1,8 +1,9 @@
-const ENDPOINT = "https://a.klaviyo.com/api";
+const ENDPOINT = "https://a.klaviyo.com";
 const API_KEY = "pk_1a77b1585e1d81ebacca13529429bafc7c";
-
+const PUBLIC_KEY = "Ym7w33";
 const port = 3000;
 const USER = "01HH0YT3XQ8T22HQESD3CYM85B";
+const USER2 = "01HHDQJVHRMWAF93S0PGTJDCBY";
 const profileSample = {
   $address1: "",
   $address2: "",
@@ -33,8 +34,10 @@ const headers = {
 module.exports = {
   ENDPOINT,
   API_KEY,
+  PUBLIC_KEY,
   profileSample,
   headers,
   port,
   USER,
+  USER2,
 };
