@@ -5,6 +5,7 @@ const { updateProfile } = require("./scenarios/profile/update-profile");
 const {
   createSubscription,
 } = require("./scenarios/profile-subscription/create-subscription");
+const { createEvent } = require("./scenarios/events/create-event");
 
 const app = express();
 app.set("json spaces", 2);
@@ -14,6 +15,8 @@ app.get("/update-profile", updateProfile);
 app.get("/get-profile", getProfile);
 
 app.get("/create-subscription", createSubscription);
+
+app.get("/create-event", createEvent);
 
 app.listen(port, () => {
   console.log(`Server is listening at http://localhost:${port}`);
