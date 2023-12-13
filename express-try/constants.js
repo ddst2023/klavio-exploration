@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const ENDPOINT = "https://a.klaviyo.com";
 const API_KEY = "pk_1a77b1585e1d81ebacca13529429bafc7c";
 const PUBLIC_KEY = "Ym7w33";
@@ -28,7 +30,7 @@ const headers = {
   accept: "application/json",
   revision: "2023-10-15",
   "content-type": "application/json",
-  Authorization: `Klaviyo-API-Key ${API_KEY}`,
+  Authorization: `Klaviyo-API-Key ${process.env.API_KEY}`,
 };
 
 module.exports = {
